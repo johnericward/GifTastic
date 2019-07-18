@@ -1,0 +1,38 @@
+.jumbotron {
+    background-color: rgb(158, 255, 78);
+
+}
+
+.titleText {
+    text-align: center;
+    color: white;
+
+}
+
+.subtitleText {
+    text-align: center;
+    color: white;
+}
+
+.buttonSpot {
+    background-color: rgb(247, 80, 130);
+
+}
+
+.gifSpot {
+    margin: 5% 0 0 0;
+    background-color: yellow;
+    color: red;
+
+}
+
+.searchSpot {
+    background-color: orange;
+    color: red;
+    margin: 5% 0 0 0;
+
+}
+
+.data-person {
+    background-color: white;
+}
