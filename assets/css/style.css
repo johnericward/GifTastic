@@ -16,23 +16,35 @@
 
 .buttonSpot {
     background-color: rgb(247, 80, 130);
+    
+}
 
+.gifButtons {
+    background-color: pink;
+    color: rgb(254, 38, 121);
 }
 
 .gifSpot {
     margin: 5% 0 0 0;
     background-color: yellow;
     color: red;
-
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3%;
 }
 
 .searchSpot {
     background-color: orange;
-    color: red;
+    color: white;
     margin: 5% 0 0 0;
 
 }
 
-.data-person {
+#searchInput {
+    color: rgb(247, 80, 130);
+}
+
+.personButton {
     background-color: white;
 }
