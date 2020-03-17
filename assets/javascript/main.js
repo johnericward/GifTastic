@@ -20,10 +20,12 @@ $(document).on("click", ".gifButtons", function () {
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
       person + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
 
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    })
+
+  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }) 
       .then(function(response) {
         var results = response.data;
 
@@ -35,15 +37,16 @@ $(document).on("click", ".gifButtons", function () {
           var p = $("<p>").text("Rating: " + rating);
 
           var personImage = $("<img>");
-          personImage.attr("src", results[i].images.fixed_height_still.url);
+          personImage.attr("src", results[i].images.fixed_height.url);
+          // personImage.attr("src", results[i].images.fixed_height_still.url);
 
           var test = results[i].images.fixed_height.url;
           console.log(test);
           console.log(results[i].images);
 
-          personImage.attr("data-state", "still");
-          personImage.attr("data-still", );
-          //personImage.attr("data-animate", );
+          // personImage.attr("data-state", "still");
+          // personImage.attr("data-still", );
+          // personImage.attr("data-animate", );
 
           gifDiv.prepend(p);
           gifDiv.prepend(personImage);
